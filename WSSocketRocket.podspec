@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage           = 'https://www.wangsu.com'
   s.authors            = { 'wsapm' => 'vpclient_coop@wangsu.com' }
   s.license            = { :type => 'MIT', :file => 'LICENSE' }
-  s.source             = { :git => 'https://github.com/facebook/SocketRocket.git', :tag => s.version.to_s }
+  s.source             = { :git => 'https://github.com/wsapm/WSSocketRocket.git', :tag => s.version.to_s }
   s.requires_arc       = true
   
   s.source_files       = 'SocketRocket/**/*.{h,m}'
