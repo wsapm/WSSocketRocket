@@ -10,7 +10,8 @@
 //
 
 #import "NSURLRequest+SRWebSocket.h"
-#import "NSURLRequest+SRWebSocketPrivate.h"
+//#import "NSURLRequest+SRWebSocketPrivate.h"
+#import "./Internal/NSRunLoop+SRWebSocketPrivate.h"
 
 // Required for object file to always be linked.
 void import_NSURLRequest_SRWebSocket() { }
