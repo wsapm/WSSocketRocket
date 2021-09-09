@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.source             = { :git => 'https://github.com/wsapm/WSSocketRocket.git', :tag => s.version.to_s }
   s.requires_arc       = true
   
-  s.source_files       = 'SocketRocket/**/*.{h,m}','SocketRocket/*.{h,m}'
+  s.source_files       = 'SocketRocket/**/*.{h,m}','SocketRocket/**/**/*.{h,m}','SocketRocket/*.{h,m}'
   s.public_header_files = 'SocketRocket/*.h'
 
   s.ios.deployment_target  = '6.0'
