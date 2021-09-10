@@ -19,4 +19,14 @@ Pod::Spec.new do |s|
   s.osx.frameworks     = 'CoreServices', 'Security'
   s.tvos.frameworks    = 'CFNetwork', 'Security'
   s.libraries          = 'icucore'
+  
+  s.dependency 'SocketRocket/Internal'
+  s.dependency 'SocketRocket/Internal/Delegate'
+  s.dependency 'SocketRocket/Internal/IOConsumer'
+  s.dependency 'SocketRocket/Internal/Proxy'
+  s.dependency 'SocketRocket/Internal/RunLoop'
+  s.dependency 'SocketRocket/Internal/Security'
+  s.dependency 'SocketRocket/Internal/Utilities'
+  
+  s.dependency 'SocketRocket/Resources'
 end
