@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name               = 'SocketRocket'
+  s.name               = 'WSSocketRocket'
   s.version            = '1.0'
   s.summary            = 'A conforming WebSocket (RFC 6455) client library for iOS, macOS and tvOS.'
   s.homepage           = 'https://www.wangsu.com'
