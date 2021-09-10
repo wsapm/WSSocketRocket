@@ -20,13 +20,13 @@ Pod::Spec.new do |s|
   s.tvos.frameworks    = 'CFNetwork', 'Security'
   s.libraries          = 'icucore'
   
-  s.dependency 'SocketRocket/Internal'
-  s.dependency 'SocketRocket/Internal/Delegate'
-  s.dependency 'SocketRocket/Internal/IOConsumer'
-  s.dependency 'SocketRocket/Internal/Proxy'
-  s.dependency 'SocketRocket/Internal/RunLoop'
-  s.dependency 'SocketRocket/Internal/Security'
-  s.dependency 'SocketRocket/Internal/Utilities'
+  s.dependency 'WSSocketRocket/Internal'
+  s.dependency 'WSSocketRocket/Internal/Delegate'
+  s.dependency 'WSSocketRocket/Internal/IOConsumer'
+  s.dependency 'WSSocketRocket/Internal/Proxy'
+  s.dependency 'WSSocketRocket/Internal/RunLoop'
+  s.dependency 'WSSocketRocket/Internal/Security'
+  s.dependency 'WSSocketRocket/Internal/Utilities'
   
   s.subspec 'Internal' do |subs_internal|
     subs_internal.source_files       = 'SocketRocket/Internal/*.{h,m}'
