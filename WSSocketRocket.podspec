@@ -28,38 +28,38 @@ Pod::Spec.new do |s|
   s.dependency 'SocketRocket/Internal/Security'
   s.dependency 'SocketRocket/Internal/Utilities'
   
-  s.subspec 'Internal' do |Internal|
-    Internal.source_files       = 'SocketRocket/Internal/*.{h,m}'
-    Internal.public_header_files = 'SocketRocket/Internal/*.h'
+  s.subspec 'Internal' do |subs_internal|
+    subs_internal.source_files       = 'SocketRocket/Internal/*.{h,m}'
+    subs_internal.public_header_files = 'SocketRocket/Internal/*.h'
     
-    Internal.subspec 'Delegate' do |Delegate|
-      Delegate.source_files       = 'SocketRocket/Internal/Delegate/*.{h,m}'
-      Delegate.public_header_files = 'SocketRocket/Internal/Delegate/*.h'
+    subs_internal.subspec 'Delegate' do |subs_delegate|
+      subs_delegate.source_files       = 'SocketRocket/Internal/Delegate/*.{h,m}'
+      subs_delegate.public_header_files = 'SocketRocket/Internal/Delegate/*.h'
     end
     
-    Internal.subspec 'IOConsumer' do |IOConsumer|
-      IOConsumer.source_files       = 'SocketRocket/Internal/IOConsumer/*.{h,m}'
-      IOConsumer.public_header_files = 'SocketRocket/Internal/IOConsumer/*.h'
+    subs_internal.subspec 'IOConsumer' do |subs_ioconsumer|
+      subs_ioconsumer.source_files       = 'SocketRocket/Internal/IOConsumer/*.{h,m}'
+      subs_ioconsumer.public_header_files = 'SocketRocket/Internal/IOConsumer/*.h'
     end
     
-    Internal.subspec 'Proxy' do |Proxy|
-      Proxy.source_files       = 'SocketRocket/Internal/Proxy/*.{h,m}'
-      Proxy.public_header_files = 'SocketRocket/Internal/Proxy/*.h'
+    subs_internal.subspec 'Proxy' do |subs_proxy|
+      subs_proxy.source_files       = 'SocketRocket/Internal/Proxy/*.{h,m}'
+      subs_proxy.public_header_files = 'SocketRocket/Internal/Proxy/*.h'
     end
     
-    Internal.subspec 'RunLoop' do |RunLoop|
-      RunLoop.source_files       = 'SocketRocket/Internal/RunLoop/*.{h,m}'
-      RunLoop.public_header_files = 'SocketRocket/Internal/RunLoop/*.h'
+    subs_internal.subspec 'RunLoop' do |subs_runloop|
+      subs_runloop.source_files       = 'SocketRocket/Internal/RunLoop/*.{h,m}'
+      subs_runloop.public_header_files = 'SocketRocket/Internal/RunLoop/*.h'
     end
     
-    Internal.subspec 'Security' do |Security|
-      Security.source_files       = 'SocketRocket/Internal/Security/*.{h,m}'
-      Security.public_header_files = 'SocketRocket/Internal/Security/*.h'
+    subs_internal.subspec 'Security' do |subs_security|
+      subs_security.source_files       = 'SocketRocket/Internal/Security/*.{h,m}'
+      subs_security.public_header_files = 'SocketRocket/Internal/Security/*.h'
     end
     
-    Internal.subspec 'Utilities' do |Utilities|
-      Utilities.source_files       = 'SocketRocket/Internal/Utilities/*.{h,m}'
-      Utilities.public_header_files = 'SocketRocket/Internal/Utilities/*.h'
+    subs_internal.subspec 'Utilities' do |subs_utilities|
+      subs_utilities.source_files       = 'SocketRocket/Internal/Utilities/*.{h,m}'
+      subs_utilities.public_header_files = 'SocketRocket/Internal/Utilities/*.h'
     end
     
     
